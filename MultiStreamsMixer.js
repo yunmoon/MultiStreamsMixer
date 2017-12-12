@@ -10,7 +10,7 @@
 // MIT License   - www.WebRTC-Experiment.com/licence
 // --------------------------------------------------
 
-export function MultiStreamsMixer(arrayOfMediaStreams) => {
+function MultiStreamsMixer(arrayOfMediaStreams) => {
 
     // requires: chrome://flags/#enable-experimental-web-platform-features
 
@@ -461,4 +461,13 @@ export function MultiStreamsMixer(arrayOfMediaStreams) => {
 
     this.getMixedStream = getMixedStream;
 
+}
+if (typeof module !== 'undefined' /* && !!module.exports*/ ) {
+    module.exports = MultiStreamsMixer;
+}
+
+if (typeof define === 'function' && define.amd) {
+    define('MultiStreamsMixer', [], function() {
+        return MultiStreamsMixer;
+    });
 }
