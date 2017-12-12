@@ -10,7 +10,7 @@
 // MIT License   - www.WebRTC-Experiment.com/licence
 // --------------------------------------------------
 
-function MultiStreamsMixer(arrayOfMediaStreams) => {
+function MultiStreamsMixer(arrayOfMediaStreams) {
 
     // requires: chrome://flags/#enable-experimental-web-platform-features
 
